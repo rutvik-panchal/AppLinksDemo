@@ -1,5 +1,6 @@
 package com.rutvik.apps.webview
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -14,6 +15,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val intent = intent
+        url = intent.getCharSequenceExtra(Intent.EXTRA_PROCESS_TEXT).toString()
         val webSettings = webView.settings
         webSettings.javaScriptEnabled = true
         webView.scrollBarStyle = View.SCROLLBARS_INSIDE_OVERLAY
