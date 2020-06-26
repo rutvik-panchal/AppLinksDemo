@@ -1,6 +1,5 @@
 package com.rutvik.apps.webview
 
-import android.util.Patterns
 import android.webkit.URLUtil
 
 object Utils {
